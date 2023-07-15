@@ -1,4 +1,4 @@
 StudentID : 2213110451
 StudentName : Natrin Thongvichit
-DatetoStudy : 17/06/2023
-ClassTopic : Basic Javascript
+DatetoStudy : 15/07/2023
+ClassTopic : Sawadee Haffu
