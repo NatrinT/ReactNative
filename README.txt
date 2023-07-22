@@ -1,4 +1,4 @@
 StudentID : 2213110451
 StudentName : Natrin Thongvichit
-DatetoStudy : 15/07/2023
-ClassTopic : Sawadee Haffu
+DatetoStudy : 22-July-2023 
+ClassTopic : Input, Stylesheet Components, Flexbox
