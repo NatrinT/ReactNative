@@ -9,9 +9,6 @@ const Counter = () => {
   return (
     <View style={styles.container}>
       <Text>{count}</Text>
-      if (count==10) {
-        setCount=0
-      }
       <Button 
         title='Click Me'
         onPress={()=>{setCount(count+1)}}

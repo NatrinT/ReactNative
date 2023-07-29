@@ -11,6 +11,7 @@ import IncrementCounter from './components/IncrementCounter';
 import Form from './components/Form';
 import UselessTextInput from './components/UselessTextInput';
 import Login from './components/Login';
+import Recap from './components/Recap';
 
 export default function App() {
   return (
@@ -18,7 +19,8 @@ export default function App() {
       {/* <Counter/> */}
       {/* <MyInput/> */}
       {/* <IncrementCounter/> */}
-      <Login/>
+      {/* <Login/> */}
+      <Recap/>
     </View>
   );
 }

@@ -22,14 +22,14 @@ const Login = () => {
       placeholder='Enter Name'
       style = {styles.textInputStlye}
       value = {textInputName}
-      onChangeText={(valueN)=>{settextInputName(valueN)}}
+      onChangeText={(value)=>{settextInputName(value)}}
       />
       <Text>{'\n'}</Text>
       <TextInput
       placeholder='Enter Email'
       style = {styles.textInputStlye}
       value = {textInputEmail}
-      onChangeText={(valueE)=>{settextInputEmail(valueE)}}
+      onChangeText={(value)=>{settextInputEmail(value)}}
       />
       <Text>{'\n'}</Text>
       <Button
