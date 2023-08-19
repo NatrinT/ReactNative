@@ -44,8 +44,7 @@ const RandomUsersScreen = () => {
             keyExtractor={(index)=> index.toString()}
             />
             )
-            }  
-
+        }  
       </View>
   )
 }
