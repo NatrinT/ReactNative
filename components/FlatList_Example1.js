@@ -38,7 +38,7 @@ const FlatList_Example1 = () => {
       //falstlist item
       <View>
         <Text style={styles.item} onPress={() => getItem(item)}>
-          {item.id.value}
+          {item.value}
         </Text>
       </View>
     );
