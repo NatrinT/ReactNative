@@ -16,8 +16,8 @@ const App = () => {
       {/* <FlatList_Example1/> */}
       {/* <FlatList_HeaderFooter/> */}
       {/* <FlatListAPI/> */}
-      {/* <News/> */}
-      <ProductScreen/>
+      <News/>
+      {/* <ProductScreen/> */}
     </View>
   )
 }

@@ -30,16 +30,24 @@ const News = () => {
     }
   };
 
+  const ItemSeperaterView = () => {
+    return (
+      //flatlist line seperate
+      <View
+        style={{ height: 0.5, width: "100%", backgroundColor: "#C8C8C8" }}
+      />
+    )
+  }
+
   const _renderItem = ({ item }) => {
     let urlToImage =
       item.urlToImage !== null
         ? item.urlToImage
         : "http://via.placeholder.com/150*100";
-    console.log(urlToImage);
 
     return (
-      <View style={{ flex: 1 }}>
-        <View style={{ flex: 1, flexDirection: "row", margin: 10 }}>
+      <View style={{ flex: 1,flexDirection: "row" }}>
+        <View style={{ flex: 1, margin: 10 }}>
           <Image
             source={{ uri: urlToImage }}
             resizeMode="cover"
@@ -70,6 +78,7 @@ const News = () => {
           renderItem={_renderItem}
           refreshing={loading}
           onRefresh={_onRefresh}
+          ItemSeparatorComponent={ItemSeperaterView}
         />
       )}
     </View>
