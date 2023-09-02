@@ -6,7 +6,7 @@ import { createNativeStackNavigator } from '@react-navigation/native-stack'
 const HomeScreen = ({navigation}) => {
   return (
     <View style={{flex:1,alignItems:'center',justifyContent:'center'}}>
-      <Text>Home Screen</Text>
+      <Text style={{rowGap:1}}>Home Screen</Text>
       <Button
       title='Go to Detail'
       onPress={()=>navigation.navigate('Detail')}
