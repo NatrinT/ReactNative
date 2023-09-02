@@ -2,8 +2,26 @@ import { View, Text, Button } from 'react-native'
 import React from 'react'
 import { NavigationContainer } from '@react-navigation/native'
 import { createNativeStackNavigator } from '@react-navigation/native-stack'
-import HomeScreen from './screens/HomeScreen'
-import DetailsScreen from './screens/DetailsScreen'
+
+function HomeScreen({navigation}){
+  return(
+    <View style={{flex:1,alignItems:'center',justifyContent:'center'}}>
+      <Text>Home Screen</Text>
+      <Button
+      title='Go to Detail'
+      onPress={()=>navigation.navigate('Detail')}
+      />
+    </View>
+  )
+}
+
+function DetailScreen(){
+  return(
+    <View style={{flex:1,alignItems:'center',justifyContent:'center'}}>
+      <Text>Detail Screen</Text>
+    </View>
+  )
+}
 
 const Stack = createNativeStackNavigator();
 
@@ -18,7 +36,7 @@ const App = () => {
         />
         <Stack.Screen 
         name='Detail' 
-        component={DetailsScreen}
+        component={DetailScreen}
         options={{title:'Detail : Overview'}}
         />
       </Stack.Navigator>
